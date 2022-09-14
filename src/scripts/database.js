@@ -1,5 +1,5 @@
 // Criando uma base de dados com uma classe construtora 
-class Product {
+export class Product {
   constructor (id, img, nameItem, description, value, tag) {
     this.id = id,
     this.img = img,
@@ -14,7 +14,7 @@ class Product {
   }
 }
 
-const database = []
+export const database = []
 
 const lightJacket = new Product(1, "./src/assets/jaqueta.svg", "Lightweight Jacket", "Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...", 100, "Camisetas")
 const blackHat = new Product(2, "./src/assets/gorro.svg", "Black Hat", "O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...", 100, "Acessórios")
