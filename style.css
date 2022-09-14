@@ -1,0 +1,305 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.big-container {
+    height: 100vh;
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav .cabecalho {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header nav .cabecalho li {
+    margin: 0px 10px;
+    font-size: 16px;
+    color: #292929;
+}
+
+header nav .cabecalho li:first-child {
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+header nav .cabecalho li:nth-child(2) {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+header nav .cabecalho li:not(:first-child):hover {
+    text-decoration: underline;
+}
+
+.main-container {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-container .card-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-container .card {
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card-container .card:hover {
+    width: 350px;
+    border: 1px solid #2E245E;
+    border-radius: 8px;
+}
+
+.card-container .card figure {
+    width: 190px;
+    height: 140px;
+    margin: 10px auto 12px auto;
+}
+
+.card-container .card figure img {
+    width: 190px;
+    height: 140px;
+    object-fit: contain;
+}
+
+.card-container .card div {
+    width: 25%;
+    height: 24px;
+    background-color: #2E245E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 13px 0 15px 10px;
+    border-radius: 8px;
+}
+
+.card-container .card .category {
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+}
+
+.card-container .card .title {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0px 0px 15px 10px;
+    color: #292929;
+}
+
+.card-container .card .subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 17px 10px;
+}
+
+.card-container .card .price {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0 0 15px 10px;
+}
+
+.card-container .card .clickable {
+    border: 0px;
+    text-align: left;
+    margin-left: 3px;
+    transition: 0.1s;
+}
+
+.card-container .card .clickable:hover {
+    color: #37268C;
+    font-weight: 600;
+}
+
+.main-container .side-container {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.main-container .side-container .search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 10px 0 0;
+}
+
+.main-container .side-container .search-container .searchbar {
+    height: 50px;
+    width: 245px;
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 8px;
+    border: 0px;
+}
+
+.main-container .side-container .search-container button {
+    height: 50px;
+    width: 95px;
+    background-color: #37268C;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    border: 0px;
+    transition: 0.2s;
+}
+
+.main-container .side-container .search-container button:hover {
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.main-container .side-container .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 10px 0 0;
+    height: 50px;
+    width: 340px;
+    background-color: #37268C;
+    
+}
+
+.main-container .side-container .title-container h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.main-container .side-container .cart-container {
+    width: 340px;
+    height: 400px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.main-container .side-container .cart-container h2 {
+    color: #292929;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 180px;
+}
+
+.main-container .side-container .cart-container p {
+    color: #242424;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.main-container .side-container .cart-container .product {
+    width: 280px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+    border-radius: 8px;
+}
+
+.main-container .side-container .cart-container .product img {
+    width: 90px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.main-container .side-container .cart-container .product .div-text {
+    width: 120px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 0 20px;
+}
+
+.main-container .side-container .cart-container .product .div-text p {
+    color: #333333;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.main-container .side-container .cart-container .product .div-text h3 {
+    color: #2E245E;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.main-container .side-container .cart-container .product .div-text button {
+    height: 20px;
+    padding: 0;
+    border: 0px;
+    color: #242424;
+    text-align: left;
+    transition: 0.1s;
+}
+
+.main-container .side-container .cart-container .product .div-text button:hover {
+    color: #37268C;
+    font-weight: 700;
+}
+
+.main-container .side-container .valuebox {
+    height: 125px;
+    width: 340px;
+    background-color: #242424;
+    color: white;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container .side-container .valuebox .pretotal {
+    margin: 15px 0 25px 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.main-container .side-container .valuebox .prevalue {
+    font-weight: 600;
+    font-size: 16px;
+}
