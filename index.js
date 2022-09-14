@@ -1,66 +1,9 @@
-// Capturando a main 
-const main = document.querySelector("main")
+const ul = document.getElementsByClassName("vitrine")[0]
 
-// Criando uma ul que será a vitrine, para armazenar os cards, com a classe apropriada para o CSS
-const ul = document.createElement("ul")
-ul.classList.add("card-container")
-main.appendChild(ul)
 
 // Criando uma função para criar os cards e seus elementos internos com base na database e anexá-los à ul.
 function cardCreator (array) {
-    for (let i = 0; i<array.length; i++) {
-        // Criação do container externo e adição de propriedades necessárias
-        let li = document.createElement("li")
-        li.classList.add("card")
-        ul.appendChild(li)
-
-        // Criação do container externo da imagem
-        let figure = document.createElement("figure")
-        li.appendChild(figure)
-
-        // Captação da imagem do array de objetos e anexação da mesma ao container externo
-        let img = document.createElement("img")
-        img.src = array[i].img
-        img.alt = array[i].nameItem
-        img.classList.add("card-image")
-        figure.appendChild(img)
-
-        // Criação do container externo da tag
-        let div = document.createElement("div")
-        li.appendChild(div)
-
-        // Categoria
-        let span = document.createElement("span")
-        span.innerText = array[i].tag
-        span.classList.add("category")
-        div.appendChild(span)
-
-        // Título
-        let h2 = document.createElement("h2")
-        h2.innerText = array[i].nameItem
-        h2.classList.add("title")
-        li.appendChild(h2)
-
-        // Subtítulo
-        let h3 = document.createElement("h3")
-        h3.innerText = array[i].description
-        h3.classList.add("subtitle")
-        li.appendChild(h3)
-
-        // Preço
-        let p = document.createElement("p")
-        p.innerText = `R$ ${array[i].value},00`
-        p.classList.add("price")
-        li.appendChild(p)
-
-        // Clicável
-        let button = document.createElement("button")
-        button.innerText = array[i].addCart
-        button.classList.add("clickable")
-        button.id = array[i].id
-        li.appendChild(button)
-
-    }
+    
 }
 cardCreator(arr)
 

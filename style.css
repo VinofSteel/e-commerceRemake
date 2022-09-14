@@ -54,7 +54,7 @@ header nav .cabecalho li:not(:first-child):hover {
     text-decoration: underline;
 }
 
-.main-container {
+main {
     height: 80%;
     width: 100%;
     display: flex;
@@ -62,7 +62,7 @@ header nav .cabecalho li:not(:first-child):hover {
     justify-content: space-between;
 }
 
-.main-container .card-container {
+main .vitrine {
     width: 70%;
     height: 100%;
     display: flex;
@@ -71,7 +71,7 @@ header nav .cabecalho li:not(:first-child):hover {
     justify-content: space-between;
 }
 
-.card-container .card {
+.vitrine li{
     height: 400px;
     width: 300px;
     display: flex;
@@ -82,25 +82,25 @@ header nav .cabecalho li:not(:first-child):hover {
     margin-bottom: 10px;
 }
 
-.card-container .card:hover {
+.vitrine li:hover {
     width: 350px;
     border: 1px solid #2E245E;
     border-radius: 8px;
 }
 
-.card-container .card figure {
+.vitrine li figure {
     width: 190px;
     height: 140px;
     margin: 10px auto 12px auto;
 }
 
-.card-container .card figure img {
+.vitrine li figure img {
     width: 190px;
     height: 140px;
     object-fit: contain;
 }
 
-.card-container .card div {
+.vitrine li div {
     width: 25%;
     height: 24px;
     background-color: #2E245E;
@@ -111,45 +111,45 @@ header nav .cabecalho li:not(:first-child):hover {
     border-radius: 8px;
 }
 
-.card-container .card .category {
+.vitrine li div span {
     font-weight: 400;
     font-size: 12px;
     color: white;
 }
 
-.card-container .card .title {
+.vitrine li h2 {
     font-weight: 700;
     font-size: 18px;
     margin: 0px 0px 15px 10px;
     color: #292929;
 }
 
-.card-container .card .subtitle {
+.vitrine li h3 {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     margin: 0 0 17px 10px;
 }
 
-.card-container .card .price {
+.vitrine li p {
     font-weight: 600;
     font-size: 14px;
     margin: 0 0 15px 10px;
 }
 
-.card-container .card .clickable {
+.vitrine li button {
     border: 0px;
     text-align: left;
     margin-left: 3px;
     transition: 0.1s;
 }
 
-.card-container .card .clickable:hover {
+.vitrine li button:hover {
     color: #37268C;
     font-weight: 600;
 }
 
-.main-container .side-container {
+main .side-container {
     width: 30%;
     height: 100%;
     display: flex;
@@ -157,13 +157,13 @@ header nav .cabecalho li:not(:first-child):hover {
     align-items: flex-end;
 }
 
-.main-container .side-container .search-container {
+main .side-container .search-container {
     display: flex;
     justify-content: flex-end;
     margin: 10px 10px 0 0;
 }
 
-.main-container .side-container .search-container .searchbar {
+main .side-container .search-container .searchbar {
     height: 50px;
     width: 245px;
     font-weight: 400;
@@ -172,7 +172,7 @@ header nav .cabecalho li:not(:first-child):hover {
     border: 0px;
 }
 
-.main-container .side-container .search-container button {
+main .side-container .search-container button {
     height: 50px;
     width: 95px;
     background-color: #37268C;
@@ -183,12 +183,12 @@ header nav .cabecalho li:not(:first-child):hover {
     transition: 0.2s;
 }
 
-.main-container .side-container .search-container button:hover {
+main .side-container .search-container button:hover {
     border-radius: 8px;
     font-weight: 600;
 }
 
-.main-container .side-container .title-container {
+main .side-container .title-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -199,13 +199,13 @@ header nav .cabecalho li:not(:first-child):hover {
     
 }
 
-.main-container .side-container .title-container h2 {
+main .side-container .title-container h2 {
     color: white;
     font-weight: 700;
     font-size: 18px;
 }
 
-.main-container .side-container .cart-container {
+main .side-container .cart-container {
     width: 340px;
     height: 400px;
     margin-right: 10px;
@@ -215,7 +215,7 @@ header nav .cabecalho li:not(:first-child):hover {
     overflow-y: scroll;
 }
 
-.main-container .side-container .cart-container h2 {
+main .side-container .cart-container h2 {
     color: #292929;
     font-weight: 700;
     font-size: 22px;
@@ -223,13 +223,13 @@ header nav .cabecalho li:not(:first-child):hover {
     margin-top: 180px;
 }
 
-.main-container .side-container .cart-container p {
+main .side-container .cart-container p {
     color: #242424;
     font-weight: 400;
     font-size: 14px;
 }
 
-.main-container .side-container .cart-container .product {
+main .side-container .cart-container .product {
     width: 280px;
     height: 100px;
     display: flex;
@@ -239,13 +239,13 @@ header nav .cabecalho li:not(:first-child):hover {
     border-radius: 8px;
 }
 
-.main-container .side-container .cart-container .product img {
+main .side-container .cart-container .product img {
     width: 90px;
     height: 70px;
     object-fit: contain;
 }
 
-.main-container .side-container .cart-container .product .div-text {
+main .side-container .cart-container .product .div-text {
     width: 120px;
     height: 90px;
     display: flex;
@@ -253,21 +253,21 @@ header nav .cabecalho li:not(:first-child):hover {
     margin: 30px 0 0 20px;
 }
 
-.main-container .side-container .cart-container .product .div-text p {
+main .side-container .cart-container .product .div-text p {
     color: #333333;
     font-weight: 700;
     font-size: 16px;
     margin-bottom: 15px;
 }
 
-.main-container .side-container .cart-container .product .div-text h3 {
+main .side-container .cart-container .product .div-text h3 {
     color: #2E245E;
     font-weight: 600;
     font-size: 14px;
     margin-bottom: 15px;
 }
 
-.main-container .side-container .cart-container .product .div-text button {
+main .side-container .cart-container .product .div-text button {
     height: 20px;
     padding: 0;
     border: 0px;
@@ -276,12 +276,12 @@ header nav .cabecalho li:not(:first-child):hover {
     transition: 0.1s;
 }
 
-.main-container .side-container .cart-container .product .div-text button:hover {
+main .side-container .cart-container .product .div-text button:hover {
     color: #37268C;
     font-weight: 700;
 }
 
-.main-container .side-container .valuebox {
+main .side-container .valuebox {
     height: 125px;
     width: 340px;
     background-color: #242424;
@@ -293,13 +293,13 @@ header nav .cabecalho li:not(:first-child):hover {
     align-items: center;
 }
 
-.main-container .side-container .valuebox .pretotal {
+main .side-container .valuebox .pretotal {
     margin: 15px 0 25px 0;
     font-weight: 600;
     font-size: 16px;
 }
 
-.main-container .side-container .valuebox .prevalue {
+main .side-container .valuebox .prevalue {
     font-weight: 600;
     font-size: 16px;
 }
