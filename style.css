@@ -149,7 +149,7 @@ main .vitrine {
     font-weight: 600;
 }
 
-main .side-container {
+aside {
     width: 30%;
     height: 100%;
     display: flex;
@@ -157,13 +157,13 @@ main .side-container {
     align-items: flex-end;
 }
 
-main .side-container .search-container {
+aside .search-container {
     display: flex;
     justify-content: flex-end;
     margin: 10px 10px 0 0;
 }
 
-main .side-container .search-container .searchbar {
+aside .search-container input {
     height: 50px;
     width: 245px;
     font-weight: 400;
@@ -172,7 +172,7 @@ main .side-container .search-container .searchbar {
     border: 0px;
 }
 
-main .side-container .search-container button {
+aside .search-container button {
     height: 50px;
     width: 95px;
     background-color: #37268C;
@@ -183,12 +183,12 @@ main .side-container .search-container button {
     transition: 0.2s;
 }
 
-main .side-container .search-container button:hover {
+aside .search-container button:hover {
     border-radius: 8px;
     font-weight: 600;
 }
 
-main .side-container .title-container {
+aside .title-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -199,13 +199,13 @@ main .side-container .title-container {
     
 }
 
-main .side-container .title-container h2 {
+aside .title-container h2 {
     color: white;
     font-weight: 700;
     font-size: 18px;
 }
 
-main .side-container .cart-container {
+aside ul {
     width: 340px;
     height: 400px;
     margin-right: 10px;
@@ -215,7 +215,7 @@ main .side-container .cart-container {
     overflow-y: scroll;
 }
 
-main .side-container .cart-container h2 {
+aside ul h2 {
     color: #292929;
     font-weight: 700;
     font-size: 22px;
@@ -223,13 +223,13 @@ main .side-container .cart-container h2 {
     margin-top: 180px;
 }
 
-main .side-container .cart-container p {
-    color: #242424;
+aside ul p {
+color: #242424;
     font-weight: 400;
     font-size: 14px;
 }
 
-main .side-container .cart-container .product {
+aside ul li {
     width: 280px;
     height: 100px;
     display: flex;
@@ -239,13 +239,13 @@ main .side-container .cart-container .product {
     border-radius: 8px;
 }
 
-main .side-container .cart-container .product img {
+aside ul li img {
     width: 90px;
     height: 70px;
     object-fit: contain;
 }
 
-main .side-container .cart-container .product .div-text {
+aside ul li .div-text {
     width: 120px;
     height: 90px;
     display: flex;
@@ -253,21 +253,21 @@ main .side-container .cart-container .product .div-text {
     margin: 30px 0 0 20px;
 }
 
-main .side-container .cart-container .product .div-text p {
+aside ul li .div-text p {
     color: #333333;
     font-weight: 700;
     font-size: 16px;
     margin-bottom: 15px;
 }
 
-main .side-container .cart-container .product .div-text h3 {
+aside ul li .div-text h3 {
     color: #2E245E;
     font-weight: 600;
     font-size: 14px;
     margin-bottom: 15px;
 }
 
-main .side-container .cart-container .product .div-text button {
+aside ul li .div-text button {
     height: 20px;
     padding: 0;
     border: 0px;
@@ -276,12 +276,12 @@ main .side-container .cart-container .product .div-text button {
     transition: 0.1s;
 }
 
-main .side-container .cart-container .product .div-text button:hover {
+aside ul li .div-text button:hover {
     color: #37268C;
     font-weight: 700;
 }
 
-main .side-container .valuebox {
+aside .valuebox {
     height: 125px;
     width: 340px;
     background-color: #242424;
@@ -293,13 +293,13 @@ main .side-container .valuebox {
     align-items: center;
 }
 
-main .side-container .valuebox .pretotal {
+aside .valuebox pre:first-child {
     margin: 15px 0 25px 0;
     font-weight: 600;
     font-size: 16px;
 }
 
-main .side-container .valuebox .prevalue {
+aside .valuebox pre:nth-child(2) {
     font-weight: 600;
     font-size: 16px;
 }
