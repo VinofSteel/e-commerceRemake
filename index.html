@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto de loja de E-commerce apresentado como capstone">
+    <link rel="shortcut icon" href="https://kenzie.com.br/favicon.jpeg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script defer type="module" src="./index.js"></script>
+    <title>Weartake</title>
+</head>
+<body>
+<div class="big-container">
+    
+    <header>
+        <nav>
+            <ul class="cabecalho">
+                <li>Weartake</li>
+                <li class="all">Todos</li>
+                <li class="accessories">Acessórios</li>
+                <li class="shoes">Calçados</li>
+                <li class="shirts">Camisetas</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <ul class="vitrine">
+
+            <!-- TEMPLATE -->
+            <!-- <li>
+                <figure>
+                    <img src="IMAGEM DO CARD" alt="">
+                </figure>
+
+                <div>
+                    <span>CATEGORIA</span>
+                </div>
+
+                <h2>TÍTULO</h2>
+                <h3>SUBTÍTULO</h3>
+                <p>PREÇO</p>
+                <button>CLICÁVEL</button>
+            </li> -->
+
+        </ul>
+
+        <aside>
+            <div class="search-container">
+                <input type="text" placeholder="Digite o que procura aqui">
+                <button>Pesquisar</button>
+            </div>
+        
+            <div class="title-container">
+                <h2>Carrinho de Compras</h2>
+            </div>
+
+            <ul>
+                <h2>Carrinho Vazio</h2>
+                <p>Adicione items</p>
+
+                <!-- TEMPLATE -->
+                <!-- <li>
+                    <img src="IMAGEM PRODUTO" alt="">
+                    <div class="div-text">
+                        <p>NOME DO PRODUTO</p>
+                        <h3>PREÇO DO PRODUTO</h3>
+                        <button>Remover produto</button>
+                    </div>
+                </li> -->
+            </ul>
+
+            <div class="valuebox">
+                <pre id="valuebox__quantity">Quantidade de items:                                   0</pre>
+                <pre id="valuebox__total">Valor total:                                           R$ 0,00</pre>
+            </div>
+        </aside>
+    </main>
+</div>
+
+    <section class="modal hidden">
+        <div>
+            <h2>Ação negada</h2>
+            <p>Ainda não há itens disponíveis nesta categoria.</p>
+            <button id="close">Entendi</button>
+        </div>
+    </section>
+</body>
+</html>

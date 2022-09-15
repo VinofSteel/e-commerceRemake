@@ -1,0 +1,386 @@
+/* GENERAL */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.big-container {
+    height: 100vh;
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CABEÇALHO */
+
+header {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav .cabecalho {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header nav .cabecalho li {
+    margin: 0px 10px;
+    font-size: 16px;
+    color: #292929;
+    transition: 0.2s;
+}
+
+header nav .cabecalho li:first-child {
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+header nav .cabecalho li:nth-child(2) {
+    font-size: 16px;
+}
+
+header nav .cabecalho li:not(:first-child):hover {
+    font-weight: 800;
+    color: #37268C;
+    cursor: pointer;
+}
+
+/* VITRINE */
+
+main {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main .vitrine {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.vitrine li{
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.vitrine li:hover {
+    width: 350px;
+    border: 1px solid #2E245E;
+    border-radius: 8px;
+}
+
+.vitrine li figure {
+    width: 190px;
+    height: 140px;
+    margin: 10px auto 12px auto;
+}
+
+.vitrine li figure img {
+    width: 190px;
+    height: 140px;
+    object-fit: contain;
+}
+
+.vitrine li div {
+    width: 25%;
+    height: 24px;
+    background-color: #2E245E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 13px 0 15px 10px;
+    border-radius: 8px;
+}
+
+.vitrine li div span {
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+}
+
+.vitrine li h2 {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0px 0px 15px 10px;
+    color: #292929;
+}
+
+.vitrine li h3 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 17px 10px;
+}
+
+.vitrine li p {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0 0 15px 10px;
+}
+
+.vitrine li button {
+    background-color: white;
+    cursor: pointer;
+    border: 0px;
+    text-align: left;
+    margin-left: 3px;
+    transition: 0.1s;
+}
+
+.vitrine li button:hover {
+    color: #37268C;
+    font-weight: 700;
+}
+
+/* CARRINHO */
+
+aside {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+aside .search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 10px 0 0;
+}
+
+aside .search-container input {
+    height: 50px;
+    width: 245px;
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 8px;
+    border: 0px;
+}
+
+aside .search-container button {
+    height: 50px;
+    width: 95px;
+    background-color: #37268C;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    border: 0px;
+    transition: 0.2s;
+}
+
+aside .search-container button:hover {
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+aside .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 10px 0 0;
+    height: 50px;
+    width: 340px;
+    background-color: #37268C;
+    
+}
+
+aside .title-container h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+aside ul {
+    width: 340px;
+    height: 400px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+aside ul h2 {
+    color: #292929;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 180px;
+}
+
+aside ul p {
+color: #242424;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+aside ul li {
+    width: 280px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+    border-radius: 8px;
+}
+
+aside ul li img {
+    width: 90px;
+    height: 70px;
+    object-fit: contain;
+}
+
+aside ul li .div-text {
+    width: 120px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 0 20px;
+}
+
+aside ul li .div-text p {
+    color: #333333;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+aside ul li .div-text h3 {
+    color: #2E245E;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+aside ul li .div-text button {
+    cursor: pointer;
+    height: 20px;
+    padding: 0;
+    border: 0px;
+    color: #242424;
+    text-align: left;
+    transition: 0.1s;
+    background-color: white;
+}
+
+aside ul li .div-text button:hover {
+    color: #37268C;
+    font-weight: 700;
+}
+
+aside .valuebox {
+    height: 125px;
+    width: 340px;
+    background-color: #242424;
+    color: white;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside .valuebox pre:first-child {
+    margin: 15px 0 25px 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+aside .valuebox pre:nth-child(2) {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* MODAL */
+
+.modal {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    width: 100vw;
+}
+
+.modal div {
+    position: fixed;
+    top: 36vh;
+    left: 40vw;
+    height: 30vh;
+    width: 30vw;
+    background-color: #37268C;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    animation: appearTopLeft 1s;
+}
+
+.modal div h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.modal div p {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.modal div button {
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal div button:hover {
+    background-color: #2E245E;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes appearTopLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-30%, -30%);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
