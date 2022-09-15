@@ -1,3 +1,4 @@
+/* GENERAL */
 body {
     font-family: 'Inter', sans-serif;
 }
@@ -11,6 +12,8 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* CABEÇALHO */
 
 header {
     width: 100%;
@@ -37,6 +40,7 @@ header nav .cabecalho li {
     margin: 0px 10px;
     font-size: 16px;
     color: #292929;
+    transition: 0.2s;
 }
 
 header nav .cabecalho li:first-child {
@@ -47,12 +51,15 @@ header nav .cabecalho li:first-child {
 
 header nav .cabecalho li:nth-child(2) {
     font-size: 16px;
-    font-weight: 600;
 }
 
 header nav .cabecalho li:not(:first-child):hover {
-    text-decoration: underline;
+    font-weight: 800;
+    color: #37268C;
+    cursor: pointer;
 }
+
+/* VITRINE */
 
 main {
     height: 80%;
@@ -150,6 +157,8 @@ main .vitrine {
     color: #37268C;
     font-weight: 700;
 }
+
+/* CARRINHO */
 
 aside {
     width: 30%;
@@ -277,6 +286,7 @@ aside ul li .div-text button {
     color: #242424;
     text-align: left;
     transition: 0.1s;
+    background-color: white;
 }
 
 aside ul li .div-text button:hover {
@@ -305,4 +315,72 @@ aside .valuebox pre:first-child {
 aside .valuebox pre:nth-child(2) {
     font-weight: 600;
     font-size: 16px;
+}
+
+/* MODAL */
+
+.modal {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    width: 100vw;
+}
+
+.modal div {
+    position: fixed;
+    top: 36vh;
+    left: 40vw;
+    height: 30vh;
+    width: 30vw;
+    background-color: #37268C;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    animation: appearTopLeft 1s;
+}
+
+.modal div h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.modal div p {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.modal div button {
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal div button:hover {
+    background-color: #2E245E;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes appearTopLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-30%, -30%);
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
