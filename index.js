@@ -86,6 +86,28 @@ class Dash {
             this.modal.classList.add("hidden")
         })
     }
+
+    static searchBar () {
+        const input = document.querySelector(".search-container input")
+        const button = document.querySelector(".search-container button")
+
+        const filteredInput = (event) => {
+            event.preventDefault()
+
+            const value = input.value.toLowerCase().normalize("NFD").trim().replace(/[\u0300-\u036f]/g, "")
+
+            const filtered = database.filter((element) => 
+            element.tag.toLowerCase().normalize("NFD").trim().replace(/[\u0300-\u036f]/g, "").includes(value) || 
+            element.nameItem.toLowerCase().normalize("NFD").trim().replace(/[\u0300-\u036f]/g, "").includes(value) || 
+            element.description.toLowerCase().normalize("NFD").trim().replace(/[\u0300-\u036f]/g, "").includes(value))
+
+            this.ul.innerHTML = ""
+
+            Dash.renderMain(filtered)
+        }
+
+        button.addEventListener("click", filteredInput)
+    }
 }
 
 Dash.renderMain(database)
@@ -94,3 +116,4 @@ Dash.showAccessories()
 Dash.showShoes()
 Dash.showShirts()
 Dash.modalClose()
+Dash.searchBar()
