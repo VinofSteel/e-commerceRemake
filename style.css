@@ -138,6 +138,8 @@ main .vitrine {
 }
 
 .vitrine li button {
+    background-color: white;
+    cursor: pointer;
     border: 0px;
     text-align: left;
     margin-left: 3px;
@@ -146,7 +148,7 @@ main .vitrine {
 
 .vitrine li button:hover {
     color: #37268C;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 aside {
