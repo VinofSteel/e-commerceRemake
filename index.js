@@ -11,6 +11,10 @@ class Dash {
             ul.append(card)
         })
     }
+
+    static renderNumberBox () {
+        
+    }
 }
 
 Dash.renderMain(database)

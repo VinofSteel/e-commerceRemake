@@ -1,10 +1,9 @@
-import { database } from "./database.js";
-
-
 export class Render {
     
     static arrayCart = []
     static ul = document.querySelector("aside ul")
+    static quantity = document.getElementById("valuebox__quantity")
+    static total = document.getElementById("valuebox__total")
 
     static cardCreator(object) {
         const li = document.createElement("li")
@@ -54,6 +53,13 @@ export class Render {
 
                 this.ul.appendChild(card)
             })
+
+            
+            this.quantity.innerText = `Quantidade de items:                                   ${this.arrayCart.length}`
+            
+            const mappedArray = this.arrayCart.map((element) => element.value)
+            this.total.innerText = `Valor total:                                           R$ ${mappedArray.reduce((a, b) => a + b, 0)},00`
+
         })
 
         li.append(figure, div, h2, h3, p, button)
@@ -93,6 +99,11 @@ export class Render {
 
                 this.ul.appendChild(card)
             })
+
+            this.quantity.innerText = `Quantidade de items:                                   ${this.arrayCart.length}`
+            
+            const mappedArray = this.arrayCart.map((element) => element.value)
+            this.total.innerText = `Valor total:                                           R$ ${mappedArray.reduce((a, b) => a + b, 0)},00`
         })
 
         div.classList.add("div-text")

@@ -270,6 +270,7 @@ aside ul li .div-text h3 {
 }
 
 aside ul li .div-text button {
+    cursor: pointer;
     height: 20px;
     padding: 0;
     border: 0px;
