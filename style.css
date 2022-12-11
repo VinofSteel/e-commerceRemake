@@ -72,10 +72,9 @@ main {
 main .vitrine {
     width: 70%;
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 8px;
 }
 
 .vitrine li{
@@ -87,12 +86,13 @@ main .vitrine {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     margin-bottom: 10px;
+    transition: 1s;
 }
 
 .vitrine li:hover {
-    width: 350px;
     border: 1px solid #2E245E;
     border-radius: 8px;
+    transition: 1s;
 }
 
 .vitrine li figure {
