@@ -1,4 +1,3 @@
-Este projeto é um "remake" do primeiro capstone que eu fiz na Kenzie Academy Brasil, capstone sendo o projeto de conclusão do primeiro módulo, onde aprendi o básico sobre HTML, CSS e JS.
+Este projeto é um "remake" do primeiro projeto front-end final que eu executei na Kenzie Academy Brasil, no módulo onde aprendi o básico sobre HTML, CSS e JS.
 
-Ele será refeito com o mesmo modelo de layout, mas com novas features e conhecimentos adquiridos no segundo módulo. Utilizarei programação funcional, POO, métodos, git flow e todo o resto 
-que for relevante para o projeto.
+Ele foi refeito com o mesmo modelo de layout, mas com novas features e conhecimentos adquiridos no segundo módulo. Utilizei programação orientada a objetos, métodos, git flow e CSS grid para a melhora do projeto. Poderia ter adicionado mais features, mas decidi manter a simplicidade do projeto, para demonstrar minhas origens e a magnitude da minha evolução em projetos futuros.
